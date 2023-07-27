@@ -1,0 +1,681 @@
+fileFormatVersion: 2
+guid: edaccc1a78cf56145acd918e9e9bbe02
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Ankle .L
+  - first:
+      1: 100002
+    second: Ankle .L_end
+  - first:
+      1: 100004
+    second: Ankle .R
+  - first:
+      1: 100006
+    second: Ankle .R_end
+  - first:
+      1: 100008
+    second: Ankle_IK .L
+  - first:
+      1: 100010
+    second: Ankle_IK .R
+  - first:
+      1: 100012
+    second: Armature
+  - first:
+      1: 100014
+    second: Body
+  - first:
+      1: 100016
+    second: Bone_1
+  - first:
+      1: 100018
+    second: Bone_1_end
+  - first:
+      1: 100020
+    second: Cape_0
+  - first:
+      1: 100022
+    second: Chest
+  - first:
+      1: 100024
+    second: Cloack_M
+  - first:
+      1: 100026
+    second: Cloack_M_end
+  - first:
+      1: 100028
+    second: Elbow .L
+  - first:
+      1: 100030
+    second: Elbow .L_end
+  - first:
+      1: 100032
+    second: Elbow .R
+  - first:
+      1: 100034
+    second: Elbow .R_end
+  - first:
+      1: 100036
+    second: Elbow_IK .L
+  - first:
+      1: 100038
+    second: Elbow_IK .L_end
+  - first:
+      1: 100040
+    second: Elbow_IK .R
+  - first:
+      1: 100042
+    second: Elbow_IK .R_end
+  - first:
+      1: 100044
+    second: Forearm .L
+  - first:
+      1: 100046
+    second: Forearm .R
+  - first:
+      1: 100048
+    second: Hair_0
+  - first:
+      1: 100050
+    second: Hair_1
+  - first:
+      1: 100052
+    second: Hair_1_end
+  - first:
+      1: 100054
+    second: Hand .L
+  - first:
+      1: 100056
+    second: Hand .L_end
+  - first:
+      1: 100058
+    second: Hand .R
+  - first:
+      1: 100060
+    second: Hand .R_end
+  - first:
+      1: 100062
+    second: Head
+  - first:
+      1: 100064
+    second: Hips
+  - first:
+      1: 100066
+    second: Knee .L
+  - first:
+      1: 100068
+    second: Knee .L_end
+  - first:
+      1: 100070
+    second: Knee .R
+  - first:
+      1: 100072
+    second: Knee .R_end
+  - first:
+      1: 100074
+    second: Knee_IK .L
+  - first:
+      1: 100076
+    second: Knee_IK .L_end
+  - first:
+      1: 100078
+    second: Knee_IK .R
+  - first:
+      1: 100080
+    second: Knee_IK .R_end
+  - first:
+      1: 100082
+    second: Leg .L
+  - first:
+      1: 100084
+    second: Leg .R
+  - first:
+      1: 100086
+    second: //RootNode
+  - first:
+      1: 100088
+    second: Neck
+  - first:
+      1: 100090
+    second: Shoulder .L
+  - first:
+      1: 100092
+    second: Shoulder .R
+  - first:
+      1: 100094
+    second: Spine
+  - first:
+      1: 100096
+    second: Wrist_IK .L
+  - first:
+      1: 100098
+    second: Wrist_IK .R
+  - first:
+      4: 400000
+    second: Ankle .L
+  - first:
+      4: 400002
+    second: Ankle .L_end
+  - first:
+      4: 400004
+    second: Ankle .R
+  - first:
+      4: 400006
+    second: Ankle .R_end
+  - first:
+      4: 400008
+    second: Ankle_IK .L
+  - first:
+      4: 400010
+    second: Ankle_IK .R
+  - first:
+      4: 400012
+    second: Armature
+  - first:
+      4: 400014
+    second: Body
+  - first:
+      4: 400016
+    second: Bone_1
+  - first:
+      4: 400018
+    second: Bone_1_end
+  - first:
+      4: 400020
+    second: Cape_0
+  - first:
+      4: 400022
+    second: Chest
+  - first:
+      4: 400024
+    second: Cloack_M
+  - first:
+      4: 400026
+    second: Cloack_M_end
+  - first:
+      4: 400028
+    second: Elbow .L
+  - first:
+      4: 400030
+    second: Elbow .L_end
+  - first:
+      4: 400032
+    second: Elbow .R
+  - first:
+      4: 400034
+    second: Elbow .R_end
+  - first:
+      4: 400036
+    second: Elbow_IK .L
+  - first:
+      4: 400038
+    second: Elbow_IK .L_end
+  - first:
+      4: 400040
+    second: Elbow_IK .R
+  - first:
+      4: 400042
+    second: Elbow_IK .R_end
+  - first:
+      4: 400044
+    second: Forearm .L
+  - first:
+      4: 400046
+    second: Forearm .R
+  - first:
+      4: 400048
+    second: Hair_0
+  - first:
+      4: 400050
+    second: Hair_1
+  - first:
+      4: 400052
+    second: Hair_1_end
+  - first:
+      4: 400054
+    second: Hand .L
+  - first:
+      4: 400056
+    second: Hand .L_end
+  - first:
+      4: 400058
+    second: Hand .R
+  - first:
+      4: 400060
+    second: Hand .R_end
+  - first:
+      4: 400062
+    second: Head
+  - first:
+      4: 400064
+    second: Hips
+  - first:
+      4: 400066
+    second: Knee .L
+  - first:
+      4: 400068
+    second: Knee .L_end
+  - first:
+      4: 400070
+    second: Knee .R
+  - first:
+      4: 400072
+    second: Knee .R_end
+  - first:
+      4: 400074
+    second: Knee_IK .L
+  - first:
+      4: 400076
+    second: Knee_IK .L_end
+  - first:
+      4: 400078
+    second: Knee_IK .R
+  - first:
+      4: 400080
+    second: Knee_IK .R_end
+  - first:
+      4: 400082
+    second: Leg .L
+  - first:
+      4: 400084
+    second: Leg .R
+  - first:
+      4: 400086
+    second: //RootNode
+  - first:
+      4: 400088
+    second: Neck
+  - first:
+      4: 400090
+    second: Shoulder .L
+  - first:
+      4: 400092
+    second: Shoulder .R
+  - first:
+      4: 400094
+    second: Spine
+  - first:
+      4: 400096
+    second: Wrist_IK .L
+  - first:
+      4: 400098
+    second: Wrist_IK .R
+  - first:
+      21: 2100000
+    second: Diff_Levana
+  - first:
+      43: 4300000
+    second: Body
+  - first:
+      74: 7400000
+    second: Armature|Lev_Blast
+  - first:
+      74: 7400002
+    second: Armature|Lev_Death
+  - first:
+      74: 7400004
+    second: Armature|Lev_Heal
+  - first:
+      74: 7400006
+    second: Armature|Lev_Idle
+  - first:
+      74: 7400008
+    second: Armature|Lev_Run
+  - first:
+      74: 7400010
+    second: Armature|Lev_Shoot
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Body
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Diff_Levana
+    second: {fileID: 2100000, guid: df990117db5b74540b5ac24afb5d367a, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Lev_Blast
+      takeName: Armature|Lev_Blast
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 77
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0
+        functionName: CannotMove
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.3298969
+        functionName: ShootBlast
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.8977116
+        functionName: CanMove
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.8969072
+        functionName: ShootBlastFinished
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Lev_Death
+      takeName: Armature|Lev_Death
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 54
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Lev_Heal
+      takeName: Armature|Lev_Heal
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.5
+        functionName: Healing
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0
+        functionName: CannotMove
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.872061
+        functionName: CanMove
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.87628865
+        functionName: HealingFinished
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Lev_Idle
+      takeName: Armature|Lev_Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Lev_Run
+      takeName: Armature|Lev_Run
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Lev_Shoot
+      takeName: Armature|Lev_Shoot
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.17077564
+        functionName: Shoot
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0
+        functionName: CanMove
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

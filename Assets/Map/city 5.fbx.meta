@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: ff730bf81a641ae4d95dd31835a08eda
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Barrier.001
+    100002: Barrier.002
+    100004: Car 1
+    100006: Car 2
+    100008: //RootNode
+    100010: City Collider
+    100012: City Street
+    100014: Cube
+    100016: Cube.002
+    100018: Cylinder.002
+    100020: Empty
+    100022: Fences
+    100024: house 2
+    100026: house 2.001
+    100028: house 3
+    100030: house 4
+    100032: house 5
+    100034: Lamp
+    100036: Lamp.001
+    100038: Lamp.002
+    100040: Lamp.003
+    100042: Lower city Collider
+    100044: Lower city Collider.001
+    100046: 'Poster '
+    100048: Train Wood Track
+    100050: Zepelin botton part
+    100052: zepellin
+    400000: Barrier.001
+    400002: Barrier.002
+    400004: Car 1
+    400006: Car 2
+    400008: //RootNode
+    400010: City Collider
+    400012: City Street
+    400014: Cube
+    400016: Cube.002
+    400018: Cylinder.002
+    400020: Empty
+    400022: Fences
+    400024: house 2
+    400026: house 2.001
+    400028: house 3
+    400030: house 4
+    400032: house 5
+    400034: Lamp
+    400036: Lamp.001
+    400038: Lamp.002
+    400040: Lamp.003
+    400042: Lower city Collider
+    400044: Lower city Collider.001
+    400046: 'Poster '
+    400048: Train Wood Track
+    400050: Zepelin botton part
+    400052: zepellin
+    2100000: No Name
+    2100002: Material
+    2100004: LightLamp
+    2100006: Material.001
+    2100008: LightLamp.001
+    2100010: Material.002
+    2100012: LightLamp.002
+    2100014: Material.003
+    2100016: LightLamp.003
+    2100018: Train Station
+    2100020: Metal Train
+    2300000: Barrier.001
+    2300002: Barrier.002
+    2300004: Car 1
+    2300006: Car 2
+    2300008: City Collider
+    2300010: City Street
+    2300012: Cube
+    2300014: Cube.002
+    2300016: Cylinder.002
+    2300018: Fences
+    2300020: house 2
+    2300022: house 2.001
+    2300024: house 3
+    2300026: house 4
+    2300028: house 5
+    2300030: Lamp
+    2300032: Lamp.001
+    2300034: Lamp.002
+    2300036: Lamp.003
+    2300038: Lower city Collider
+    2300040: Lower city Collider.001
+    2300042: 'Poster '
+    2300044: Train Wood Track
+    2300046: Zepelin botton part
+    2300048: zepellin
+    3300000: Barrier.001
+    3300002: Barrier.002
+    3300004: Car 1
+    3300006: Car 2
+    3300008: City Collider
+    3300010: City Street
+    3300012: Cube
+    3300014: Cube.002
+    3300016: Cylinder.002
+    3300018: Fences
+    3300020: house 2
+    3300022: house 2.001
+    3300024: house 3
+    3300026: house 4
+    3300028: house 5
+    3300030: Lamp
+    3300032: Lamp.001
+    3300034: Lamp.002
+    3300036: Lamp.003
+    3300038: Lower city Collider
+    3300040: Lower city Collider.001
+    3300042: 'Poster '
+    3300044: Train Wood Track
+    3300046: Zepelin botton part
+    3300048: zepellin
+    4300000: Cube
+    4300002: zepellin
+    4300004: Zepelin botton part
+    4300006: Fences
+    4300008: Lamp
+    4300010: Lamp.001
+    4300012: Lamp.002
+    4300014: 'Poster '
+    4300016: Car 1
+    4300018: Car 2
+    4300020: City Collider
+    4300022: City Street
+    4300024: Cylinder.002
+    4300026: Cube.002
+    4300028: Lower city Collider
+    4300030: house 2
+    4300032: house 3
+    4300034: house 4
+    4300036: house 5
+    4300038: Lamp.003
+    4300040: Barrier.001
+    4300042: Train Wood Track
+    4300044: Barrier.002
+    4300046: house 2.001
+    4300048: Lower city Collider.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

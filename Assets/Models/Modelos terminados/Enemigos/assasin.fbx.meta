@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: 065555129b53a8f47956501b892f9be2
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Ankle_IK .L
+  - first:
+      1: 100002
+    second: Ankle_IK .R
+  - first:
+      1: 100004
+    second: Armature
+  - first:
+      1: 100006
+    second: //RootNode
+  - first:
+      1: 100008
+    second: Body
+  - first:
+      1: 100010
+    second: Chest
+  - first:
+      1: 100012
+    second: Cloack
+  - first:
+      1: 100014
+    second: CloackL_0
+  - first:
+      1: 100016
+    second: CloackL_1
+  - first:
+      1: 100018
+    second: CloackL_1_end
+  - first:
+      1: 100020
+    second: CloackM_0
+  - first:
+      1: 100022
+    second: CloackM_1
+  - first:
+      1: 100024
+    second: CloackM_1_end
+  - first:
+      1: 100026
+    second: Elbow .L
+  - first:
+      1: 100028
+    second: Elbow .L_end
+  - first:
+      1: 100030
+    second: Elbow .R
+  - first:
+      1: 100032
+    second: Elbow .R_end
+  - first:
+      1: 100034
+    second: Empty
+  - first:
+      1: 100036
+    second: Foot .L
+  - first:
+      1: 100038
+    second: Foot .L_end
+  - first:
+      1: 100040
+    second: Foot .R
+  - first:
+      1: 100042
+    second: Foot .R_end
+  - first:
+      1: 100044
+    second: Hand .L
+  - first:
+      1: 100046
+    second: Hand .R
+  - first:
+      1: 100048
+    second: Head
+  - first:
+      1: 100050
+    second: Head_end
+  - first:
+      1: 100052
+    second: Hip
+  - first:
+      1: 100054
+    second: Knee .L
+  - first:
+      1: 100056
+    second: Knee .L_end
+  - first:
+      1: 100058
+    second: Knee .R
+  - first:
+      1: 100060
+    second: Knee .R_end
+  - first:
+      1: 100062
+    second: LowerArm .L
+  - first:
+      1: 100064
+    second: LowerArm .L_end
+  - first:
+      1: 100066
+    second: LowerArm .R
+  - first:
+      1: 100068
+    second: LowerArm .R_end
+  - first:
+      1: 100070
+    second: LowerLeg .L
+  - first:
+      1: 100072
+    second: LowerLeg .L_end
+  - first:
+      1: 100074
+    second: LowerLeg .R
+  - first:
+      1: 100076
+    second: LowerLeg .R_end
+  - first:
+      1: 100078
+    second: Neck
+  - first:
+      1: 100080
+    second: Shoulder .L
+  - first:
+      1: 100082
+    second: Shoulder .R
+  - first:
+      1: 100084
+    second: Sword .L
+  - first:
+      1: 100086
+    second: Sword .L_end
+  - first:
+      1: 100088
+    second: Sword .R
+  - first:
+      1: 100090
+    second: Sword .R_end
+  - first:
+      1: 100092
+    second: UpperArm .L
+  - first:
+      1: 100094
+    second: UpperArm .R
+  - first:
+      1: 100096
+    second: UpperLEg .L
+  - first:
+      1: 100098
+    second: UpperLEg .R
+  - first:
+      1: 100100
+    second: Wrist_IK .L
+  - first:
+      1: 100102
+    second: Wrist_IK .R
+  - first:
+      4: 400000
+    second: Ankle_IK .L
+  - first:
+      4: 400002
+    second: Ankle_IK .R
+  - first:
+      4: 400004
+    second: Armature
+  - first:
+      4: 400006
+    second: //RootNode
+  - first:
+      4: 400008
+    second: Body
+  - first:
+      4: 400010
+    second: Chest
+  - first:
+      4: 400012
+    second: Cloack
+  - first:
+      4: 400014
+    second: CloackL_0
+  - first:
+      4: 400016
+    second: CloackL_1
+  - first:
+      4: 400018
+    second: CloackL_1_end
+  - first:
+      4: 400020
+    second: CloackM_0
+  - first:
+      4: 400022
+    second: CloackM_1
+  - first:
+      4: 400024
+    second: CloackM_1_end
+  - first:
+      4: 400026
+    second: Elbow .L
+  - first:
+      4: 400028
+    second: Elbow .L_end
+  - first:
+      4: 400030
+    second: Elbow .R
+  - first:
+      4: 400032
+    second: Elbow .R_end
+  - first:
+      4: 400034
+    second: Empty
+  - first:
+      4: 400036
+    second: Foot .L
+  - first:
+      4: 400038
+    second: Foot .L_end
+  - first:
+      4: 400040
+    second: Foot .R
+  - first:
+      4: 400042
+    second: Foot .R_end
+  - first:
+      4: 400044
+    second: Hand .L
+  - first:
+      4: 400046
+    second: Hand .R
+  - first:
+      4: 400048
+    second: Head
+  - first:
+      4: 400050
+    second: Head_end
+  - first:
+      4: 400052
+    second: Hip
+  - first:
+      4: 400054
+    second: Knee .L
+  - first:
+      4: 400056
+    second: Knee .L_end
+  - first:
+      4: 400058
+    second: Knee .R
+  - first:
+      4: 400060
+    second: Knee .R_end
+  - first:
+      4: 400062
+    second: LowerArm .L
+  - first:
+      4: 400064
+    second: LowerArm .L_end
+  - first:
+      4: 400066
+    second: LowerArm .R
+  - first:
+      4: 400068
+    second: LowerArm .R_end
+  - first:
+      4: 400070
+    second: LowerLeg .L
+  - first:
+      4: 400072
+    second: LowerLeg .L_end
+  - first:
+      4: 400074
+    second: LowerLeg .R
+  - first:
+      4: 400076
+    second: LowerLeg .R_end
+  - first:
+      4: 400078
+    second: Neck
+  - first:
+      4: 400080
+    second: Shoulder .L
+  - first:
+      4: 400082
+    second: Shoulder .R
+  - first:
+      4: 400084
+    second: Sword .L
+  - first:
+      4: 400086
+    second: Sword .L_end
+  - first:
+      4: 400088
+    second: Sword .R
+  - first:
+      4: 400090
+    second: Sword .R_end
+  - first:
+      4: 400092
+    second: UpperArm .L
+  - first:
+      4: 400094
+    second: UpperArm .R
+  - first:
+      4: 400096
+    second: UpperLEg .L
+  - first:
+      4: 400098
+    second: UpperLEg .R
+  - first:
+      4: 400100
+    second: Wrist_IK .L
+  - first:
+      4: 400102
+    second: Wrist_IK .R
+  - first:
+      21: 2100000
+    second: Material.001
+  - first:
+      21: 2100002
+    second: Cloack
+  - first:
+      43: 4300000
+    second: Body
+  - first:
+      43: 4300002
+    second: Cloack
+  - first:
+      74: 7400000
+    second: Armature|Attack
+  - first:
+      74: 7400002
+    second: Armature|Death
+  - first:
+      74: 7400004
+    second: Armature|Idle
+  - first:
+      74: 7400006
+    second: Armature|Run
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Body
+  - first:
+      137: 13700002
+    second: Cloack
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cloack
+    second: {fileID: 2100000, guid: 848f3ef34af9b4b479de012c5170160f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 848f3ef34af9b4b479de012c5170160f, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Attack
+      takeName: Armature|Attack
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Death
+      takeName: Armature|Death
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.7861866
+        functionName: StartSinking
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Run
+      takeName: Armature|Run
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

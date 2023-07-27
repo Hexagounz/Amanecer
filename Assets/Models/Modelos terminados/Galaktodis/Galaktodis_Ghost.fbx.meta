@@ -1,0 +1,270 @@
+fileFormatVersion: 2
+guid: 4da08d3878cc33d4fbdce52037e0fbbb
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Ankle_IK .L
+    100002: Ankle_IK .R
+    100004: Armature
+    100006: Beard
+    100008: Beard_end
+    100010: Body
+    100012: Cape_0 .L
+    100014: Cape_0 .R
+    100016: Cape_1 .L
+    100018: Cape_1 .R
+    100020: Cape_End .L
+    100022: Cape_End .L_end
+    100024: Cape_End .R
+    100026: Cape_End .R_end
+    100028: Cape_Master
+    100030: CapeM_0
+    100032: CapeM_1
+    100034: CapeM_End
+    100036: CapeM_End_end
+    100038: Chest
+    100040: Elbow .L
+    100042: Elbow .L_end
+    100044: Elbow .R
+    100046: Elbow .R_end
+    100048: Foot .L
+    100050: Foot .L_end
+    100052: Foot .R
+    100054: Foot .R_end
+    100056: //RootNode
+    100058: Hand .L
+    100060: Hand .L_end
+    100062: Hand .R
+    100064: Hand .R_end
+    100066: Head
+    100068: Hip
+    100070: Knee .L
+    100072: Knee .L_end
+    100074: Knee .R
+    100076: Knee .R_end
+    100078: LowerArm .L
+    100080: LowerArm .L_end
+    100082: LowerArm .R
+    100084: LowerArm .R_end
+    100086: LowerLeg. L
+    100088: LowerLeg. L_end
+    100090: LowerLeg. R
+    100092: LowerLeg. R_end
+    100094: Neck
+    100096: Root_Cape .L
+    100098: Root_Cape .R
+    100100: Root_CapeM
+    100102: Shoulder .L
+    100104: Shoulder .R
+    100106: UpperArm .L
+    100108: UpperArm .R
+    100110: UpperLeg .L
+    100112: UpperLeg .R
+    100114: Wrist_IK .L
+    100116: Wrist_IK .R
+    400000: Ankle_IK .L
+    400002: Ankle_IK .R
+    400004: Armature
+    400006: Beard
+    400008: Beard_end
+    400010: Body
+    400012: Cape_0 .L
+    400014: Cape_0 .R
+    400016: Cape_1 .L
+    400018: Cape_1 .R
+    400020: Cape_End .L
+    400022: Cape_End .L_end
+    400024: Cape_End .R
+    400026: Cape_End .R_end
+    400028: Cape_Master
+    400030: CapeM_0
+    400032: CapeM_1
+    400034: CapeM_End
+    400036: CapeM_End_end
+    400038: Chest
+    400040: Elbow .L
+    400042: Elbow .L_end
+    400044: Elbow .R
+    400046: Elbow .R_end
+    400048: Foot .L
+    400050: Foot .L_end
+    400052: Foot .R
+    400054: Foot .R_end
+    400056: //RootNode
+    400058: Hand .L
+    400060: Hand .L_end
+    400062: Hand .R
+    400064: Hand .R_end
+    400066: Head
+    400068: Hip
+    400070: Knee .L
+    400072: Knee .L_end
+    400074: Knee .R
+    400076: Knee .R_end
+    400078: LowerArm .L
+    400080: LowerArm .L_end
+    400082: LowerArm .R
+    400084: LowerArm .R_end
+    400086: LowerLeg. L
+    400088: LowerLeg. L_end
+    400090: LowerLeg. R
+    400092: LowerLeg. R_end
+    400094: Neck
+    400096: Root_Cape .L
+    400098: Root_Cape .R
+    400100: Root_CapeM
+    400102: Shoulder .L
+    400104: Shoulder .R
+    400106: UpperArm .L
+    400108: UpperArm .R
+    400110: UpperLeg .L
+    400112: UpperLeg .R
+    400114: Wrist_IK .L
+    400116: Wrist_IK .R
+    2100000: Body
+    4300000: Body
+    7400000: Armature|Idle
+    7400002: Armature|Statue
+    9500000: //RootNode
+    13700000: Body
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: c10156c2034ffcc45b47e404a3d7897b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Statue
+      takeName: Armature|Statue
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
