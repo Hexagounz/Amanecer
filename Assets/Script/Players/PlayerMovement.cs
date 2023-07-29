@@ -77,9 +77,9 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-        if (canMove == true)
+        if (canMove)
         {
-            playerRigidbody.MovePosition(transform.position += Forward * velocity * Time.deltaTime);
+            playerRigidbody.MovePosition(transform.position += Forward * (velocity * Time.deltaTime));
         }
 
     }
@@ -97,7 +97,8 @@ public class PlayerMovement : MonoBehaviour
             Forward = transform.forward;
             return;
         }
-        Forward = Vector3.Cross(transform.right, hitInfo.normal);
+        //Forward = Vector3.Cross(transform.right, hitInfo.normal);
+        Forward = new Vector3(input.x, 0, input.y).normalized;
     }
 
     void CalculateGroundAngle()
