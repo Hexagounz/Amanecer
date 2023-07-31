@@ -16,7 +16,7 @@ public class PlayerAbilities : MonoBehaviour
     [SerializeField] string fire = "LFire", heal = "LHeal", ult = "LUlti";
     [Header("H. Attributes")]
     public float TimeBetweenHealth = 5;
-    float timer;
+    float healTimer;
     [SerializeField] GameObject HealingVfx;
     [Header("Cooldowns")]
     [SerializeField] Image imageHealthCooldown;
@@ -42,47 +42,62 @@ public class PlayerAbilities : MonoBehaviour
     void Update()
     {
         fireCountdown -= Time.deltaTime;
-        timer += Time.deltaTime;
+        healTimer += Time.deltaTime;
         BlastTimer += Time.deltaTime;
-        if (Input.GetButtonDown(ult) && BlastTimer >= TimeBetweenBlast)
-        {
-            if (healingCast == true)
-            {
-                return;
-            }
-            else
-            {
-                blasting = true;
-                ShootingBlastAnimation();
-                BlastTimer = 0f;
-                isCooldownB = true;
-            }
-        }
+
         BlastCooldown();
-        if (Input.GetButtonDown(fire) && fireCountdown <= 0f)
-        {
-            if (blasting == false)
-            {
-                ShootingAnimation();
-                fireCountdown = 1f / fireRate;
-            }
-            else
-            {
-                return;
-            }
-        }
-        else if (Input.GetButton(heal) && timer >= TimeBetweenHealth)
-        {
-            if (blasting == false)
-            {
-                HealingAnimation();
-                timer = 0f;
-                isCooldownH = true;
-                healingCast = true;
-            }
-        }
+        
         HealingCooldown();
     }
+
+    public void DefinitiveShoot()
+    {
+        if (BlastTimer >= TimeBetweenBlast)
+        {
+            if (healingCast)
+            {
+                return;
+            }
+
+            blasting = true;
+            ShootingBlastAnimation();
+            BlastTimer = 0f;
+            isCooldownB = true;
+
+        }
+    }
+
+    public void BasicShoot()
+    {
+        if (fireCountdown <= 0f)
+        {
+            if (blasting)
+            {
+                return;
+            }
+            ShootingAnimation();
+            fireCountdown = 1f / fireRate;
+        }
+    }
+
+    public void PerformHeal()
+    {
+        if (healTimer >= TimeBetweenHealth)
+        {
+            if (blasting)
+            {
+                return;
+            }
+            
+            HealingAnimation();
+            healTimer = 0f;
+            isCooldownH = true;
+            healingCast = true;
+            
+        }
+    }
+    
+    
     void HealingCooldown()
     {
         if (isCooldownH == true)
@@ -97,7 +112,7 @@ public class PlayerAbilities : MonoBehaviour
     }
     void BlastCooldown()
     {
-        if (isCooldownB == true)
+        if (isCooldownB)
         {
             imageBlastCooldown.fillAmount += 1 / TimeBetweenBlast * Time.deltaTime;
             if (imageBlastCooldown.fillAmount >= 1)

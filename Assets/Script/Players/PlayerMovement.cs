@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,7 +10,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float heightPadding = 0.05f;
     [SerializeField] LayerMask ground;
     [SerializeField] float maxGroundAngle = 120;
-    [SerializeField] string vertical = "Vertical", horizontal = "Horizontal";
+
+    [Header("Inputs")]
+    [SerializeField] private PlayerNumber playerNumber = PlayerNumber.player1;
+    private PlayerControls controls;
 
     Vector2 input;
     float angle;
@@ -23,11 +27,55 @@ public class PlayerMovement : MonoBehaviour
     bool grounded;
 
     bool canMove;
+
+    private PlayerInput _playerInput;
+    
+    private PlayerAbilities _playerAbilities;
     private void Awake()
     {
+        _playerInput = GetComponent<PlayerInput>();
+        
+        _playerAbilities = GetComponent<PlayerAbilities>();
         anim = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody>();
         canMove = true;
+        
+        controls = new PlayerControls();
+        
+
+        EnableAndConfigPlayerInputs();
+    }
+    
+    //Inputs 
+
+    void EnableAndConfigPlayerInputs()
+    {
+        if (playerNumber == PlayerNumber.player1)
+        {
+            controls.Player1.Movement.performed += GetMovementInput;
+            controls.Player1.Movement.canceled += ctx => input = Vector2.zero;
+            controls.Player1.BasicAttack.started += ctx => _playerAbilities.BasicShoot();
+            controls.Player1.UltimateAttack.started += ctx => _playerAbilities.DefinitiveShoot();
+            controls.Player1.Heal.started += ctx => _playerAbilities.PerformHeal();
+            
+            controls.Player1.Enable();
+        }
+        else
+        {
+            controls.Player2.Movement.performed += GetMovementInput;
+            controls.Player2.Movement.canceled += ctx => input = Vector2.zero;
+            controls.Player2.BasicAttack.started += ctx => _playerAbilities.BasicShoot();
+            controls.Player2.UltimateAttack.started += ctx => _playerAbilities.DefinitiveShoot();
+            controls.Player2.Heal.started += ctx => _playerAbilities.PerformHeal();
+            controls.Player2.Enable();
+        }
+    }
+    
+    
+    
+    public void GetMovementInput(InputAction.CallbackContext context)
+    {
+        input = context.ReadValue<Vector2>();
     }
 
     Quaternion targetRotation;
@@ -38,26 +86,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        GetInput();
         CalculateDirection();
         CalculateForward();
         CalculateGroundAngle();
         CheckGround();
         ApplyGravity();
 
-        if (Mathf.Abs(input.x) < 1 && Mathf.Abs(input.y) < 1) return;
+        if (Mathf.Abs(input.x) == 0 && Mathf.Abs(input.y) == 0) return;
 
         Rotate();
         Move();
     }
-
-    void GetInput()
-    {
-        input.x = Input.GetAxisRaw(horizontal);
-        input.y = Input.GetAxisRaw(vertical);
-
-    }
-
+    
     void CalculateDirection()
     {
         angle = Mathf.Atan2(input.x, input.y);
@@ -86,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Animating()
     {
-        bool walking = Input.GetAxisRaw(horizontal) != 0f || Input.GetAxisRaw(vertical) != 0f;
+        bool walking = input.x != 0f || input.y != 0f;
         anim.SetBool("IsWalking", walking);
     }
 
@@ -138,4 +178,10 @@ public class PlayerMovement : MonoBehaviour
     {
         canMove = true;
     }
+}
+
+public enum PlayerNumber
+{
+    player1,
+    player2
 }
