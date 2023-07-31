@@ -33,6 +33,7 @@ public class PlayerGamePadAssigner : MonoBehaviour
             InputUser.PerformPairingWithDevice(Gamepad.all[1], _playerInput2.user);
         }else if (Gamepad.all.Count == 1)
         {
+            _playerInput1.user.UnpairDevice(Gamepad.all[0]);
             _playerInput2.user.UnpairDevices();
             InputUser.PerformPairingWithDevice(Gamepad.all[0], _playerInput2.user);
         }
