@@ -43,12 +43,20 @@ public class PlayerGamePadAssigner : MonoBehaviour
 
     public void CheckInputs(PlayerInput _playerInput)
     {
-        
+        Debug.Log(_playerInput.gameObject.name);
+        Debug.Log(Gamepad.all.Count);
         if (Gamepad.all.Count == 1)
         {
-            if (_playerInput.gameObject.name == "Levana_Animated")
+            Debug.Log("1 gamepad");
+            if (_playerInput.gameObject.name == _playerInput1.gameObject.name)
             {
-                _playerInput.user.UnpairDevice(Gamepad.all[0]);
+                Debug.Log(_playerInput.user.valid);
+                Debug.Log(_playerInput.user.pairedDevices[0]);
+                Debug.Log("jugador 1");
+            }
+            else
+            {
+                Debug.Log("el jugador ingresado es" + _playerInput.gameObject.name);
             }
         }
 
