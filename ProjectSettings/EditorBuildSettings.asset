@@ -41,4 +41,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/GAMEOVER_CASTLE.unity
     guid: 909b976019b84b248b7abddc4b83a85b
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 056f27e413b8ccd46a64c357b89ff48c,
+      type: 2}

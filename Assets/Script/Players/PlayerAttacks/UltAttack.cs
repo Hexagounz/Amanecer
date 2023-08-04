@@ -26,9 +26,13 @@ public class UltAttack : MonoBehaviour {
 
     void Attack()
     {
-        if (enemyHealth.currentHealth > 0)
+        if (enemyHealth)
         {
-            enemyHealth.TakeDamage(attackDamage);
+            if (enemyHealth.currentHealth > 0)
+            {
+                enemyHealth.TakeDamage(attackDamage);
+            } 
         }
+
     }
 }
