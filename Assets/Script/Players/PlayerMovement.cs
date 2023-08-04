@@ -41,15 +41,23 @@ public class PlayerMovement : MonoBehaviour
         canMove = true;
         
         controls = new PlayerControls();
-        
 
-        EnableAndConfigPlayerInputs();
+        //EnableAndConfigPlayerInputs();
     }
     
     //Inputs 
 
     void EnableAndConfigPlayerInputs()
     {
+        controls.Player1.Movement.performed += GetMovementInput;
+        controls.Player1.Movement.canceled += ctx => input = Vector2.zero;
+        controls.Player1.BasicAttack.started += ctx => _playerAbilities.BasicShoot();
+        controls.Player1.UltimateAttack.started += ctx => _playerAbilities.DefinitiveShoot();
+        controls.Player1.Heal.started += ctx => _playerAbilities.PerformHeal();
+            
+        controls.Player1.Enable();
+        
+        /*
         if (playerNumber == PlayerNumber.player1)
         {
             controls.Player1.Movement.performed += GetMovementInput;
@@ -68,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
             controls.Player2.UltimateAttack.started += ctx => _playerAbilities.DefinitiveShoot();
             controls.Player2.Heal.started += ctx => _playerAbilities.PerformHeal();
             controls.Player2.Enable();
-        }
+        }*/
     }
     
     
@@ -86,6 +94,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        ControlsRute();
+        
         CalculateDirection();
         CalculateForward();
         CalculateGroundAngle();
@@ -96,6 +106,16 @@ public class PlayerMovement : MonoBehaviour
 
         Rotate();
         Move();
+    }
+
+    private void ControlsRute()
+    {
+        input = _playerInput.actions["Movement"].ReadValue<Vector2>();
+        
+        _playerInput.actions["BasicAttack"].started += ctx => _playerAbilities.BasicShoot();
+        _playerInput.actions["UltimateAttack"].started += ctx => _playerAbilities.DefinitiveShoot();
+        _playerInput.actions["Heal"].started += ctx => _playerAbilities.PerformHeal();
+        
     }
     
     void CalculateDirection()
