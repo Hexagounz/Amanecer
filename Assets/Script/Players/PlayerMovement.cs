@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -92,6 +93,11 @@ public class PlayerMovement : MonoBehaviour
         Animating();
     }
 
+    private void Start()
+    {
+        ButtonsRute();
+    }
+
     private void Update()
     {
         ControlsRute();
@@ -112,11 +118,20 @@ public class PlayerMovement : MonoBehaviour
     {
         input = _playerInput.actions["Movement"].ReadValue<Vector2>();
         
+
+    }
+
+    private void ButtonsRute()
+    {
         _playerInput.actions["BasicAttack"].started += ctx => _playerAbilities.BasicShoot();
         _playerInput.actions["UltimateAttack"].started += ctx => _playerAbilities.DefinitiveShoot();
         _playerInput.actions["Heal"].started += ctx => _playerAbilities.PerformHeal();
-        
+        if(playerNumber == PlayerNumber.player1)
+            _playerInput.actions["PauseGame"].canceled += ctx => PauseMenuGame.Instance.ControlPauseMenu();
     }
+    
+    
+    
     
     void CalculateDirection()
     {

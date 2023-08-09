@@ -21,17 +21,20 @@ public class PlayerGamePadAssigner : MonoBehaviour
     private void Awake()
     {
         _inputManager = GetComponent<PlayerInputManager>();
+        InitializePlayers();
     }
 
 
     private void Start()
     {
-        InitializePlayers();
+
     }
 
 
     private void InitializePlayers()
     {
+
+        
         _player1.enabled = true;
         _player2.enabled = true;
 
@@ -43,7 +46,9 @@ public class PlayerGamePadAssigner : MonoBehaviour
         Debug.Log(_player.gameObject.name);
         Debug.Log(_player.user.valid);
         
-        if(_player == _player1)
+        if(_player == _player1 && Gamepad.all.Count > 0)
             _player.user.UnpairDevice(Gamepad.current);
+
+
     }
 }

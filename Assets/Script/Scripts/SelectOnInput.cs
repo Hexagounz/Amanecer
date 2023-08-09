@@ -10,6 +10,7 @@ public class SelectOnInput : MonoBehaviour {
 
     private bool buttonSelected;
 
+    /*
     void Update()
     {
         if (Input.GetAxisRaw("LVertical") != 0 && buttonSelected == false)
@@ -23,4 +24,5 @@ public class SelectOnInput : MonoBehaviour {
     {
         buttonSelected = false;
     }
+    */
 }

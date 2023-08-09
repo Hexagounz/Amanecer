@@ -1,29 +1,47 @@
+using System;
 using UnityEngine;
 
-public class MenusinGame : MonoBehaviour
+public class PauseMenuGame : MonoBehaviour
 {
+    public static PauseMenuGame Instance;
+    
     public bool gameHasEnded = false;
     public static bool GameIsPaused = false;
     [SerializeField] GameObject pausemenuUI;
     [SerializeField] GameObject GameoverUI;
     public float restartdelay = 2f;
 
+
+    private void Awake()
+    {
+        if (Instance)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
+
     private void Start()
     {
         Resume();
     }
 
-
-    private void Update()
+    public void ControlPauseMenu()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        Debug.Log("juego pausado");
+        if (GameIsPaused)
+        { 
+            Resume();
+        }
+        else
         {
-            if (GameIsPaused){ Resume();
-            }
-            else{ Pause();
-            }
+            Pause();
         }
     }
+
 
     public void EndGame()
     {

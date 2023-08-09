@@ -88,7 +88,7 @@ public class PlayerHealth : MonoBehaviour
         isDead = true;
         anim.SetTrigger("Die");
         playerMovement.enabled = false;
-        FindObjectOfType<MenusinGame>().EndGame();
+        PauseMenuGame.Instance.EndGame();
     }
     public void Healing()
     {

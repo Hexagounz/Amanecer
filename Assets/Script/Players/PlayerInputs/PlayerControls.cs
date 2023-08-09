@@ -49,13 +49,21 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""PauseGame"",
+                    ""type"": ""Button"",
+                    ""id"": ""b6e438f7-930a-4d45-a91e-da72ebc4a142"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": ""Keyboard"",
                     ""id"": ""919013f9-e1ae-4c62-b69c-2d06484f712f"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""2DVector(mode=1)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -183,6 +191,28 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Heal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""70d99260-e869-44b5-be5c-2a4140b9e6ff"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PauseGame"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c9f5f837-136b-4194-a9c5-75ed7971f33d"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PauseGame"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -194,7 +224,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""name"": ""Movement"",
                     ""type"": ""Value"",
                     ""id"": ""1c8c6771-6600-44d0-b81f-8bc08f7fde74"",
-                    ""expectedControlType"": ""Axis"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -367,6 +397,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Player1_BasicAttack = m_Player1.FindAction("BasicAttack", throwIfNotFound: true);
         m_Player1_UltimateAttack = m_Player1.FindAction("UltimateAttack", throwIfNotFound: true);
         m_Player1_Heal = m_Player1.FindAction("Heal", throwIfNotFound: true);
+        m_Player1_PauseGame = m_Player1.FindAction("PauseGame", throwIfNotFound: true);
         // Player2
         m_Player2 = asset.FindActionMap("Player2", throwIfNotFound: true);
         m_Player2_Movement = m_Player2.FindAction("Movement", throwIfNotFound: true);
@@ -426,6 +457,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Player1_BasicAttack;
     private readonly InputAction m_Player1_UltimateAttack;
     private readonly InputAction m_Player1_Heal;
+    private readonly InputAction m_Player1_PauseGame;
     public struct Player1Actions
     {
         private @PlayerControls m_Wrapper;
@@ -434,6 +466,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @BasicAttack => m_Wrapper.m_Player1_BasicAttack;
         public InputAction @UltimateAttack => m_Wrapper.m_Player1_UltimateAttack;
         public InputAction @Heal => m_Wrapper.m_Player1_Heal;
+        public InputAction @PauseGame => m_Wrapper.m_Player1_PauseGame;
         public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -455,6 +488,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Heal.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnHeal;
                 @Heal.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnHeal;
                 @Heal.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnHeal;
+                @PauseGame.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPauseGame;
+                @PauseGame.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPauseGame;
+                @PauseGame.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPauseGame;
             }
             m_Wrapper.m_Player1ActionsCallbackInterface = instance;
             if (instance != null)
@@ -471,6 +507,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Heal.started += instance.OnHeal;
                 @Heal.performed += instance.OnHeal;
                 @Heal.canceled += instance.OnHeal;
+                @PauseGame.started += instance.OnPauseGame;
+                @PauseGame.performed += instance.OnPauseGame;
+                @PauseGame.canceled += instance.OnPauseGame;
             }
         }
     }
@@ -538,6 +577,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnBasicAttack(InputAction.CallbackContext context);
         void OnUltimateAttack(InputAction.CallbackContext context);
         void OnHeal(InputAction.CallbackContext context);
+        void OnPauseGame(InputAction.CallbackContext context);
     }
     public interface IPlayer2Actions
     {
