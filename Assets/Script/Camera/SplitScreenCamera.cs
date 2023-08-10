@@ -11,6 +11,7 @@ public class SplitScreenCamera : MonoBehaviour
     public float maxSplitDistance = 10f;
 
     private Camera cam;
+    private GameObject splitCameraObj;
     private Vector3 velocity;
 
     private void Start()
@@ -33,11 +34,23 @@ public class SplitScreenCamera : MonoBehaviour
             Vector3 newPosition = centerPoint + offset;
 
             transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref velocity, smoothTime);
+
+            if (splitCameraObj != null)
+            {
+                //splitCameraObj.GetComponent<Camera>().enabled = false;
+                cam.rect = new Rect(0f, 0f, 1f, 1f);
+                Destroy(splitCameraObj);
+            }
+
         }
         else
         {
             // Split the camera if players are too far apart
-            SplitCamera();
+            if (splitCameraObj == null)
+            {
+                SplitCamera();
+            }
+
         }
     }
 
@@ -51,7 +64,7 @@ public class SplitScreenCamera : MonoBehaviour
         transform.position = player1Pos;
         cam.rect = new Rect(0f, 0f, 0.5f, 1f);
 
-        GameObject splitCameraObj = new GameObject("SplitCamera");
+        splitCameraObj = new GameObject("SplitCamera");
         Camera splitCamera = splitCameraObj.AddComponent<Camera>();
 
         splitCamera.transform.position = player2Pos;
