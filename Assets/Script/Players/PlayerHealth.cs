@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -25,9 +26,14 @@ public class PlayerHealth : MonoBehaviour
     bool isDead;
     //bool damaged; //booleano para avisar que he sido lastimado.  
 
+    private SkinnedMeshRenderer textureMaterial;
+
+    [SerializeField] private AudioClip[] hurtSounds;
+    [SerializeField] private AudioSource hurtAudioSource;
     private void Awake()
     {
         anim = GetComponent<Animator>();
+        textureMaterial = GetComponentInChildren<SkinnedMeshRenderer>();
         playerMovement = GetComponent<PlayerMovement>();
         PlayerAbilities = GetComponent<PlayerAbilities>();
         currentHealth = startingHealth;
@@ -58,8 +64,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-
-        if (PlayerAbilities.blasting == true) // invulnerabilidad
+        if (PlayerAbilities.blasting) // invulnerabilidad
         {
             audio.clip = NewSong;
             audio.Play();
@@ -70,6 +75,8 @@ public class PlayerHealth : MonoBehaviour
             counting += 1;
             currentHealth -= amount;
             HealthSlider.value = currentHealth;
+            StartCoroutine(DamageFlashing());
+            PlayHurtSound();
             if (counting == 3)
             {
                 Speedingup();
@@ -112,6 +119,25 @@ public class PlayerHealth : MonoBehaviour
             playerMovement.velocity = oldvelocity;
             return;
         }
+
+    }
+
+    void PlayHurtSound()
+    {
+        int rand = Random.Range(0, hurtSounds.Length);
+        hurtAudioSource.clip = hurtSounds[rand];
+        
+        if(!hurtAudioSource.isPlaying)
+            hurtAudioSource.Play();
+    }
+    
+    IEnumerator DamageFlashing()
+    {
+        textureMaterial.material.color = Color.Lerp(Color.white,Color.red, 0.2f);
+        yield return new WaitForSeconds(0.2f);
+        textureMaterial.material.color = Color.Lerp(Color.red, Color.white, 0.2f);
+        yield return new WaitForSeconds(0.2f);
+        textureMaterial.material.color = Color.Lerp(Color.white,Color.red, 0.2f);
 
     }
 

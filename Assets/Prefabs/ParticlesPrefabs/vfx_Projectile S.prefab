@@ -9714,7 +9714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 50
-  speed: 10
+  speed: 20
   HitPrefab: {fileID: 1786602822841824, guid: b0851bc97979a634aaab03c3bd90274f, type: 3}
   ReflecPrefab: {fileID: 1119135177241176, guid: 0705e4bc906853e4e9a5ba5856638b83,
     type: 3}

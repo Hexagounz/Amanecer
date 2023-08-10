@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,10 +14,13 @@ public class EnemyHealth : MonoBehaviour {
     private bool isDead;
     bool isSinking;
 
+    private SkinnedMeshRenderer textureMaterial;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
         capsuleCollider = GetComponent<CapsuleCollider>();
+        textureMaterial = GetComponentInChildren<SkinnedMeshRenderer>();
         currentHealth = startingHealth;
     }
 
@@ -30,7 +35,7 @@ public class EnemyHealth : MonoBehaviour {
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
-
+        StartCoroutine(DamageFlashing());
 
         if (currentHealth <= 0)
         {
@@ -52,5 +57,15 @@ public class EnemyHealth : MonoBehaviour {
         GetComponent<Rigidbody>().isKinematic = true;
         isSinking = true;
         Destroy(gameObject, 2f);
+    }
+
+    IEnumerator DamageFlashing()
+    {
+        textureMaterial.material.color = Color.Lerp(Color.white,Color.red, 0.2f);
+        yield return new WaitForSeconds(0.2f);
+        textureMaterial.material.color = Color.Lerp(Color.red, Color.white, 0.2f);
+        yield return new WaitForSeconds(0.2f);
+        textureMaterial.material.color = Color.Lerp(Color.white,Color.red, 0.2f);
+
     }
 }

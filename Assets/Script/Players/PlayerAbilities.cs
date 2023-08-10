@@ -22,6 +22,16 @@ public class PlayerAbilities : MonoBehaviour
     [SerializeField] Image imageHealthCooldown;
     [SerializeField] Image imageBlastCooldown;
 
+    [Space] [Header("SFX")] 
+    [SerializeField] private AudioSource basicShootSfx;
+
+    [SerializeField] private AudioSource ultimateShootSfx;
+    [SerializeField] private AudioSource healSfx;
+
+    [Space] [Header("Power Fx")] 
+    [SerializeField] private ParticleSystem ultimateShootParticles;
+    
+
     bool isCooldownH, isCooldownB;
     public bool healingCast; //para marcar eventos que ocurren o dejan de ocurrir solo cuando la cura esta siendo casteada.
     public bool blasting;
@@ -125,10 +135,13 @@ public class PlayerAbilities : MonoBehaviour
     void Shoot() //shoot y shootblast ocurren en medio de la animacion
     {
         Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
+        basicShootSfx.Play();
     }
     void ShootBlast()
     {
         Instantiate(Ultprefab, Ultfirepoint.position, Ultfirepoint.rotation);
+        ultimateShootSfx.Play();
+
     }
     void ShootingAnimation()
     {
@@ -138,12 +151,14 @@ public class PlayerAbilities : MonoBehaviour
     void ShootingBlastAnimation()
     {
         anim.SetTrigger("Blast");
+        ultimateShootParticles.Play();
     }
 
     void HealingAnimation()
     {
         Instantiate(HealingVfx, Self.position, Self.rotation);
         anim.SetTrigger("Healing");
+        healSfx.Play();
     }
 
     void ShootBlastFinished()  //shootblastfinished y healingfinished ocurren en medio de la animacion.

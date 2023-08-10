@@ -14,6 +14,9 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] GameObject HitPrefab;
     [SerializeField] GameObject ReflecPrefab;
 
+
+    [SerializeField] private GameObject explosionPrefab;
+
     bool enemyInRange;
 
     GameObject Self;
@@ -34,7 +37,8 @@ public class PlayerAttack : MonoBehaviour
         if (other.tag == "Enemy")
         {
             enemyHealth = other.GetComponent<EnemyHealth>();
-            enemyInRange = true;
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Attack();
         }
 
         else if (other.tag == "EnemyShield")
@@ -45,25 +49,12 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (enemyInRange)
-        {
-            Attack();
-        }
-        if (enemyHealth.currentHealth <= 0)
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
     public void Attack()
     {
         if (enemyHealth.currentHealth > 0)
         {
             enemyHealth.TakeDamage(attackDamage);
-            Debug.Log("i've hit");
         }
-        Destroy(this.gameObject);
+        Destroy(gameObject);
     }
 }
