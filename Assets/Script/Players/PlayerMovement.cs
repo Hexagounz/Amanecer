@@ -28,7 +28,6 @@ public class PlayerMovement : MonoBehaviour
     bool grounded;
 
     bool canMove;
-
     private PlayerInput _playerInput;
     
     private PlayerAbilities _playerAbilities;
@@ -44,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         controls = new PlayerControls();
 
         //EnableAndConfigPlayerInputs();
+
     }
     
     //Inputs 
@@ -113,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
         Rotate();
         Move();
     }
+    
 
     private void ControlsRute()
     {
@@ -155,6 +156,8 @@ public class PlayerMovement : MonoBehaviour
         if (canMove)
         {
             playerRigidbody.MovePosition(transform.position += Forward * (velocity * Time.deltaTime));
+            
+            
         }
 
     }

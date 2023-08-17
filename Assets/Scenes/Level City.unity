@@ -267,6 +267,16 @@ PrefabInstance:
       propertyPath: imageHealthCooldown
       value: 
       objectReference: {fileID: 1534217816}
+    - target: {fileID: 535261993828124390, guid: 5fa3c163c0a89284ea052dd63c7ad3b1,
+        type: 3}
+      propertyPath: imageBlastCooldown
+      value: 
+      objectReference: {fileID: 1681349694}
+    - target: {fileID: 535261993828124390, guid: 5fa3c163c0a89284ea052dd63c7ad3b1,
+        type: 3}
+      propertyPath: imageHealthCooldown
+      value: 
+      objectReference: {fileID: 1534217816}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fa3c163c0a89284ea052dd63c7ad3b1, type: 3}
 --- !u!114 &43842610 stripped
@@ -6336,6 +6346,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114346061714321130, guid: 7d07b06c3e3ee9c4f9c1c06ae1db6fb4,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114459353676734614, guid: 7d07b06c3e3ee9c4f9c1c06ae1db6fb4,
         type: 3}
       propertyPath: m_FillAmount
@@ -6699,6 +6714,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1741107654}
     - target: {fileID: 114863137482265732, guid: e812b650abd624e4d8f28ffedbb737fc,
+        type: 3}
+      propertyPath: imageHealthCooldown
+      value: 
+      objectReference: {fileID: 555419144}
+    - target: {fileID: 5115771672232871348, guid: e812b650abd624e4d8f28ffedbb737fc,
+        type: 3}
+      propertyPath: imageBlastCooldown
+      value: 
+      objectReference: {fileID: 1741107654}
+    - target: {fileID: 5115771672232871348, guid: e812b650abd624e4d8f28ffedbb737fc,
         type: 3}
       propertyPath: imageHealthCooldown
       value: 
