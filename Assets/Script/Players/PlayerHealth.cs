@@ -26,6 +26,10 @@ public class PlayerHealth : MonoBehaviour
     bool isDead;
     //bool damaged; //booleano para avisar que he sido lastimado.  
 
+    private bool isInvulnerable;
+    private float invulnerableTime = 0.8f;
+    private float invulnerableTimer;
+
     private SkinnedMeshRenderer textureMaterial;
 
     [SerializeField] private AudioClip[] hurtSounds;
@@ -41,6 +45,9 @@ public class PlayerHealth : MonoBehaviour
         audio.Play();
         oldvelocity = playerMovement.velocity; //obtener velocidad
         newvelocity = oldvelocity * 2; //crear el nuevo valor de velocidad.
+        
+        
+        invulnerableTimer = invulnerableTime;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -60,10 +67,26 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = LimitHealth;
         }
         Timedragged();
+
+        if (isInvulnerable)
+        {
+            if (invulnerableTimer > 0)
+            {
+                invulnerableTimer -= Time.deltaTime;
+            }
+            else
+            {
+                isInvulnerable = false;
+                invulnerableTimer = invulnerableTime;
+            }
+        }
     }
 
     public void TakeDamage(int amount)
     {
+        if(isInvulnerable)
+            return;
+        
         if (PlayerAbilities.blasting) // invulnerabilidad
         {
             audio.clip = NewSong;
@@ -77,11 +100,15 @@ public class PlayerHealth : MonoBehaviour
             HealthSlider.value = currentHealth;
             StartCoroutine(DamageFlashing());
             PlayHurtSound();
+            isInvulnerable = true;
+            /*
             if (counting == 3)
             {
                 Speedingup();
-            }
+            }*/
         }
+
+
 
 
         if (currentHealth <= 0 && !isDead)
