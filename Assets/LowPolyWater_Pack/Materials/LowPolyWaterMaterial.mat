@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: LowPolyWaterMaterial
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _GLOSSYREFLECTIONS_OFF _SPECULARHIGHLIGHTS_OFF
@@ -21,6 +22,10 @@ Material:
     - _BakedCubemap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 0, y: 0}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
@@ -162,22 +167,41 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AdvMode: 0
+    - _AlphaClip: 0
     - _Ambient: 1
     - _AnisotropicAX: 0.25
     - _AnisotropicAY: 0.75
+    - _Blend: 0
     - _BumpScale: 1
     - _ClearCoat: 0
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
     - _ClearcoatSmoothness: 0.8
     - _ClearcoatStrength: 1
+    - _Cull: 2
     - _Culling: 2
     - _Cutoff: 0.5
+    - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _Displacement: 0.27863377
     - _DisplacementTiling: 18.586807
     - _DstBlend: 0
     - _EmissionToDiffuse: 0
+    - _EnvironmentReflections: 0
     - _FadeExp: 0.91503274
     - _FoamWaveDependency: 0.10205479
     - _FresnelPower: 1.7931035
@@ -199,8 +223,10 @@ Material:
     - _OcclusionStrength: 1
     - _OutlineWidth: 1
     - _Parallax: 0.02
+    - _QueueOffset: 0
     - _RandomHeight: 0.5
     - _RandomSpeed: 0.5
+    - _ReceiveShadows: 1
     - _ReflDistort: 0.9267696
     - _ReflectionBlendMode: 0
     - _ReflectionMode: 3
@@ -225,6 +251,7 @@ Material:
     - _Shininess: 10
     - _ShoreTiling: 56.862743
     - _SkyBoxReflection: 0.426
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecMode: 0
     - _SpecularAlbedoTint: 1
@@ -237,6 +264,7 @@ Material:
     - _Stencil: 0
     - _StencilComp: 0
     - _StencilOp: 0
+    - _Surface: 0
     - _TilingMode: 0
     - _UVSec: 0
     - _UVSetAlbedo: 0
@@ -256,13 +284,14 @@ Material:
     - _WaveLength: 0.5
     - _WaveScale: 0.046289656
     - _WaveSpeed: 1
+    - _WorkflowMode: 1
     - _ZWrite: 1
     - _isInnerAlphaBlendOrColor: 0
     m_Colors:
     - WaveSpeed: {r: 1.086165, g: 4.440575, b: 12.105146, a: -3.0206447}
     - _AnimationDirection: {r: 0, g: 0, b: 0, a: 0}
     - _AnimationTiling: {r: 0.04582553, g: 0.0182, b: 0.045714468, a: 0.027129691}
-    - _BaseColor: {r: 0.20728809, g: 0.4960089, b: 0.52205884, a: 1}
+    - _BaseColor: {r: 0.26989618, g: 0.49814457, b: 0.5735294, a: 1}
     - _BumpDirection: {r: 30, g: 30, b: 30, a: -50}
     - _BumpMap_ST: {r: 1, g: 1, b: 0, a: 0}
     - _BumpTiling: {r: 0.01, g: 0.01, b: 0.01, a: 0.01}
@@ -309,6 +338,7 @@ Material:
     - _WaveOffset: {r: -0, g: -0, b: -0, a: -0}
     - _WaveScale4: {r: 0, g: 0, b: 0, a: 0}
     - _WorldLightDir: {r: -0.030375138, g: -0.20139083, b: -0.97903997, a: 0}
+  m_BuildTextureStacks: []
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6
