@@ -8017,7 +8017,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Dialogue
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2098626724}
     - target: {fileID: 4123944396165574021, guid: b00685b147389774591a0ad61332c02b,
         type: 3}
       propertyPath: SecondWave
@@ -30147,7 +30147,7 @@ MonoBehaviour:
   _buttonA: {fileID: 1437651643}
   _buttonB: {fileID: 943700459}
   _doorCollider: {fileID: 1606797674}
-  _audioSource: {fileID: 0}
+  _audioSource: {fileID: 1606766689}
 --- !u!95 &1606766687
 Animator:
   serializedVersion: 3
@@ -39080,7 +39080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2098626725
 RectTransform:
   m_ObjectHideFlags: 0
