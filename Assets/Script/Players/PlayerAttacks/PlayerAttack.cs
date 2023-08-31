@@ -37,7 +37,8 @@ public class PlayerAttack : MonoBehaviour
         if (other.tag == "Enemy")
         {
             enemyHealth = other.GetComponent<EnemyHealth>();
-            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            GameObject particles = Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(particles, 2f);
             Attack();
         }
 

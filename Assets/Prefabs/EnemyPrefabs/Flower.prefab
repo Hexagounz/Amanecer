@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 15
-  fireRate: 1.15
+  fireRate: 0.9
   playerTag: Player
   partToRotate: {fileID: 4788617312176978}
   turnSpeed: 5
