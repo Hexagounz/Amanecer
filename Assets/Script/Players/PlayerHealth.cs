@@ -41,8 +41,6 @@ public class PlayerHealth : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
         PlayerAbilities = GetComponent<PlayerAbilities>();
         currentHealth = startingHealth;
-        audio = GetComponentInParent<AudioSource>();
-        audio.Play();
         oldvelocity = playerMovement.velocity; //obtener velocidad
         newvelocity = oldvelocity * 2; //crear el nuevo valor de velocidad.
         

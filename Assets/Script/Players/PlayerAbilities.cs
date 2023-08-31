@@ -30,7 +30,10 @@ public class PlayerAbilities : MonoBehaviour
 
     [Space] [Header("Power Fx")] 
     [SerializeField] private ParticleSystem ultimateShootParticles;
-    
+
+    public bool canHeal;
+    public bool canShoot;
+    public bool canBlast;
 
     bool isCooldownH, isCooldownB;
     public bool healingCast; //para marcar eventos que ocurren o dejan de ocurrir solo cuando la cura esta siendo casteada.
@@ -62,6 +65,9 @@ public class PlayerAbilities : MonoBehaviour
 
     public void DefinitiveShoot()
     {
+        if(!canBlast)
+            return;
+        
         if (BlastTimer >= TimeBetweenBlast)
         {
             if (healingCast)
@@ -79,6 +85,9 @@ public class PlayerAbilities : MonoBehaviour
 
     public void BasicShoot()
     {
+        if(!canShoot)
+            return;
+        
         if (fireCountdown <= 0f)
         {
             if (blasting)
@@ -92,6 +101,9 @@ public class PlayerAbilities : MonoBehaviour
 
     public void PerformHeal()
     {
+        if(!canHeal)
+            return;
+        
         if (healTimer >= TimeBetweenHealth)
         {
             if (blasting)

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemySoldier : MonoBehaviour {
@@ -128,4 +129,8 @@ public class EnemySoldier : MonoBehaviour {
         anim.SetTrigger("Shooting");    }
 
 
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, seekingRange);
+    }
 }

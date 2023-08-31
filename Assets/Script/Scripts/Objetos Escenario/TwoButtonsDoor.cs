@@ -35,7 +35,10 @@ public class TwoButtonsDoor : MonoBehaviour
     private void CheckConditions()
     {
         if (_buttonA.IsActived && _buttonB.IsActived)
-        {
+        {        
+            _buttonA.OnActive -= CheckConditions;
+            _buttonB.OnActive -= CheckConditions;
+            
             OpenDoor();
             _navMeshObstacle.enabled = false;
             _doorCollider.enabled = false;

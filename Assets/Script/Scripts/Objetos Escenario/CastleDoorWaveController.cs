@@ -21,6 +21,9 @@ public class CastleDoorWaveController : MonoBehaviour
 
     [SerializeField] private GameObject _blocketDoor;
 
+    [SerializeField] private GameObject doorPoint;
+
+    [SerializeField] private GameObject healTutorialTrigger;
     private void Start()
     {
         _currentEnemys = new List<GameObject>();
@@ -95,6 +98,9 @@ public class CastleDoorWaveController : MonoBehaviour
     private void CompletedWaves()
     {
         _blocketDoor.SetActive(false);
+        GameObject particles = Instantiate(_spawnParticles, doorPoint.transform.position, Quaternion.identity);
+        healTutorialTrigger.SetActive(true);
+        Destroy(particles, 2f);
     }
 
 }
