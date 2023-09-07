@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
         CalculateForward();
         CalculateGroundAngle();
         CheckGround();
-        ApplyGravity();
+        //ApplyGravity();
 
         if (Mathf.Abs(input.x) == 0 && Mathf.Abs(input.y) == 0) return;
 
