@@ -6,7 +6,7 @@ public class CallScene : MonoBehaviour
 
     public void LoadByIndex()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Loading_Forest");
     }
 
     public void QuitGame()

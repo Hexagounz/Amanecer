@@ -16,6 +16,8 @@ public class EnemyHealth : MonoBehaviour {
 
     private SkinnedMeshRenderer textureMaterial;
 
+    public bool isInmune;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -34,12 +36,15 @@ public class EnemyHealth : MonoBehaviour {
 
     public void TakeDamage(int amount)
     {
-        currentHealth -= amount;
-        StartCoroutine(DamageFlashing());
-
-        if (currentHealth <= 0)
+        if (!isInmune)
         {
-            Death();            
+            currentHealth -= amount;
+            StartCoroutine(DamageFlashing());
+
+            if (currentHealth <= 0)
+            {
+                Death();            
+            }
         }
     }
 

@@ -153,8 +153,8 @@ Material:
     - _RimAttenEffect: 1
     - _RimCubemapTint: 0
     - _RimIntensity: 2
-    - _RimRange: 0.397
-    - _RimSharpness: 0.157
+    - _RimRange: 0.818
+    - _RimSharpness: 0.967
     - _RimThreshold: 0
     - _SSDistortion: 1
     - _SSPower: 1

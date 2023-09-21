@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossManager : MonoBehaviour
 {
+    /*
     Boss boss;
 
     EnemyHealth enemyHealth;
@@ -70,4 +71,5 @@ public class BossManager : MonoBehaviour
         }
 
     }
+    */
 }

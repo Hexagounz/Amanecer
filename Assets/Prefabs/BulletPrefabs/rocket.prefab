@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partToRotate: {fileID: 4589860692856170}
   turnSpeed: 5
-  speed: 4
+  speed: 7
 --- !u!136 &136963896706136780
 CapsuleCollider:
   m_ObjectHideFlags: 0

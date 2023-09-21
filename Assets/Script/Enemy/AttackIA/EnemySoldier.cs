@@ -83,7 +83,8 @@ public class EnemySoldier : MonoBehaviour {
             fireCountdown = 1f / fireRate;
         }
 
-        fireCountdown -= Time.deltaTime;    }
+        fireCountdown -= Time.deltaTime;    
+    }
 
     void Move()
     {

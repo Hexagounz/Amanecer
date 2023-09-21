@@ -1546,9 +1546,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 5
-  m_Height: 15
+  m_Height: 10.000002
   m_Direction: 1
-  m_Center: {x: 0, y: 5.5, z: 0}
+  m_Center: {x: 0, y: 4.7766476, z: 0}
 --- !u!114 &114945824062843406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1563,6 +1563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 200
   currentHealth: 0
+  isInmune: 0
 --- !u!114 &114851872325192824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1577,7 +1578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seekingRange: 15
   stoppingDistance: 10
-  fireRate: 2
+  fireRate: 0.8
   playerTag: Player
   partToRotate: {fileID: 4722969674794908}
   turnSpeed: 5

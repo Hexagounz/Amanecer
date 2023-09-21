@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,12 @@ public class TankMissile : MonoBehaviour {
     [SerializeField] Transform partToRotate;
     [SerializeField] float turnSpeed = 5f;
     [SerializeField] float speed = 4f;
+    [SerializeField] private float lifeTime = 3f;
+
+    private void Start()
+    {
+        Destroy(gameObject, lifeTime);
+    }
 
     public void Seek (Transform _target)
     {
@@ -37,8 +44,6 @@ public class TankMissile : MonoBehaviour {
         }
 
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
-
-        Destroy(gameObject, 3f);
     }
 
     // void HitTarget()

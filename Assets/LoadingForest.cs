@@ -13,7 +13,7 @@ public class LoadingForest : MonoBehaviour {
 
         if (restartTimer >= restartDelay)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("Level Forest (2021)");
         }
     }
 

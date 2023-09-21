@@ -1849,9 +1849,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 2.02
-  m_Height: 16.7
+  m_Height: 6.7515697
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 2.8457065, z: 0}
 --- !u!195 &4771587900537111121
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1888,6 +1888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 150
   currentHealth: 0
+  isInmune: 0
 --- !u!114 &6622354155129194147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1915,3 +1916,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 1
   attackDamage: 30
+  _castleDoor: {fileID: 0}
+  nextLevelCollider: {fileID: 0}

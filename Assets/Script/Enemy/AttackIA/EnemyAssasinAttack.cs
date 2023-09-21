@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -5,6 +6,9 @@ public class EnemyAssasinAttack : MonoBehaviour // es simplemente una modificaci
 {
     [SerializeField] float timeBetweenAttacks = 1f;
     [SerializeField] int attackDamage = 10;
+
+    [SerializeField] private Animator _castleDoor;
+    [SerializeField] private GameObject nextLevelCollider;
 
     Animator anim;
     NavMeshAgent nav;
@@ -35,13 +39,20 @@ public class EnemyAssasinAttack : MonoBehaviour // es simplemente una modificaci
                 AttackAnimation();
                 playerhealth.TakeDamage(attackDamage);
             }
-
-
         }
     }
 
     void AttackAnimation()
     {
         anim.SetTrigger("Attacking");
+    }
+
+    private void OnDestroy()
+    {
+        if (_castleDoor)
+        {
+            _castleDoor.SetTrigger("Open");
+            nextLevelCollider.SetActive(true);
+        }
     }
 }
