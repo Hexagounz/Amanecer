@@ -117,16 +117,33 @@ public class PlayerMovement : MonoBehaviour
 
     private void ControlsRute()
     {
-        input = _playerInput.actions["Movement"].ReadValue<Vector2>();
-        
-
+        if (playerNumber == PlayerNumber.player2)
+        {
+            input = _playerInput.actions["Movement1"].ReadValue<Vector2>();
+        }
+        else
+        {
+            input = _playerInput.actions["Movement"].ReadValue<Vector2>();
+        }
     }
 
     private void ButtonsRute()
     {
-        _playerInput.actions["BasicAttack"].started += ctx => _playerAbilities.BasicShoot();
-        _playerInput.actions["UltimateAttack"].started += ctx => _playerAbilities.DefinitiveShoot();
-        _playerInput.actions["Heal"].started += ctx => _playerAbilities.PerformHeal();
+        if (playerNumber == PlayerNumber.player2)
+        {
+            _playerInput.actions["BasicAttack1"].started += ctx => _playerAbilities.BasicShoot();
+            _playerInput.actions["UltimateAttack1"].started += ctx => _playerAbilities.DefinitiveShoot();
+            _playerInput.actions["Heal1"].started += ctx => _playerAbilities.PerformHeal();
+        }
+        else
+        {
+            _playerInput.actions["BasicAttack"].started += ctx => _playerAbilities.BasicShoot();
+            _playerInput.actions["UltimateAttack"].started += ctx => _playerAbilities.DefinitiveShoot();
+            _playerInput.actions["Heal"].started += ctx => _playerAbilities.PerformHeal();
+        }
+        
+        
+
         if(playerNumber == PlayerNumber.player1)
             _playerInput.actions["PauseGame"].canceled += ctx => PauseMenuGame.Instance.ControlPauseMenu();
     }

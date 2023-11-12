@@ -1355,6 +1355,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1627109368650988805, guid: 5fa3c163c0a89284ea052dd63c7ad3b1,
+        type: 3}
+      propertyPath: m_DefaultActionMap
+      value: 06af24ba-1474-407d-b605-768e88443fa6
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54730441236178400, guid: 5fa3c163c0a89284ea052dd63c7ad3b1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5fa3c163c0a89284ea052dd63c7ad3b1, type: 3}
@@ -3207,6 +3212,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4943269129781131487, guid: e812b650abd624e4d8f28ffedbb737fc,
+        type: 3}
+      propertyPath: m_DefaultActionMap
+      value: 06af24ba-1474-407d-b605-768e88443fa6
+      objectReference: {fileID: 0}
     - target: {fileID: 5115771672232871348, guid: e812b650abd624e4d8f28ffedbb737fc,
         type: 3}
       propertyPath: canHeal
@@ -3232,6 +3242,11 @@ PrefabInstance:
       propertyPath: imageHealthCooldown
       value: 
       objectReference: {fileID: 1552839288}
+    - target: {fileID: 7636462542238634679, guid: e812b650abd624e4d8f28ffedbb737fc,
+        type: 3}
+      propertyPath: playerNumber
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54551013311655706, guid: e812b650abd624e4d8f28ffedbb737fc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e812b650abd624e4d8f28ffedbb737fc, type: 3}

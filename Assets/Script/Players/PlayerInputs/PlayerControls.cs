@@ -27,9 +27,25 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
+                    ""name"": ""Movement1"",
+                    ""type"": ""Value"",
+                    ""id"": ""9352fa9c-69a1-404a-9451-5a44fb619b1b"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
                     ""name"": ""BasicAttack"",
                     ""type"": ""Button"",
                     ""id"": ""82b934b4-246d-481a-b9e1-914d158caaa1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""BasicAttack1"",
+                    ""type"": ""Button"",
+                    ""id"": ""20f34c90-82a8-49f5-a771-b7ef4850c8f0"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -43,9 +59,25 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
+                    ""name"": ""UltimateAttack1"",
+                    ""type"": ""Button"",
+                    ""id"": ""8df73667-7565-4370-8067-087f5267872c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
                     ""name"": ""Heal"",
                     ""type"": ""Button"",
                     ""id"": ""43593385-66c1-4523-8ac0-6e5ced0c42a1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Heal1"",
+                    ""type"": ""Button"",
+                    ""id"": ""be697bc9-0346-40bc-89a7-717c26c7a3c3"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -74,7 +106,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": ""up"",
                     ""id"": ""e1afbce7-67cc-4c91-9e58-90b0a5c9540b"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -85,7 +117,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": ""down"",
                     ""id"": ""9b756165-bf84-43c3-bb45-5391c73f0152"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""path"": ""<Keyboard>/f"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -96,7 +128,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""b0490923-a54a-4aa1-96c6-09fde1d507e2"",
-                    ""path"": ""<Keyboard>/a"",
+                    ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -107,7 +139,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""9a8cdf0e-fbae-4f07-9441-a605ac9b34ac"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""path"": ""<Keyboard>/g"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -129,7 +161,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""c3543be6-2ba0-433e-911f-2b37e660a4b9"",
-                    ""path"": ""<Keyboard>/q"",
+                    ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -151,7 +183,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""9a12f875-6498-4f9d-8201-385dc808538c"",
-                    ""path"": ""<Keyboard>/r"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -173,7 +205,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""cdf7c010-7883-4aba-aaa9-908711ba975e"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -195,7 +227,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""70d99260-e869-44b5-be5c-2a4140b9e6ff"",
-                    ""path"": ""<Keyboard>/escape"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -211,6 +243,171 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""PauseGame"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Keyboard"",
+                    ""id"": ""860df25e-06be-41a6-84c8-ef4cdd250dda"",
+                    ""path"": ""2DVector(mode=1)"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement1"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""17437705-753a-40bd-881f-cc4fc43578ce"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""c95fc3c7-e93c-40b8-9abb-8d82abfd7ad1"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""b53b4efe-a1f3-49f4-95f4-20b5ea80991f"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""75adb812-4d24-41d9-b54f-c16a36bfb3bf"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b223fa98-9438-4b9c-9afc-7c9078857557"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2ce1a046-229e-479d-834e-6f2eda66fd71"",
+                    ""path"": ""<Keyboard>/numpad3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BasicAttack1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e4cee5c2-1d52-4959-bbc2-3bdad2ccf340"",
+                    ""path"": ""<Keyboard>/3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BasicAttack1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ada6b962-dbad-43e5-a2f9-42040cdcaa93"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""BasicAttack1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""68711343-8676-4e7b-afea-d7a0a4d226a6"",
+                    ""path"": ""<Keyboard>/numpad4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UltimateAttack1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fac75e39-8278-4423-a478-1750d3ff3bec"",
+                    ""path"": ""<Keyboard>/4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UltimateAttack1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9bb167d3-a520-481b-a7cf-e0aec2c47888"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""UltimateAttack1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d4426246-776f-4559-966a-f316c239bcdf"",
+                    ""path"": ""<Keyboard>/numpad1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Heal1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9d142bdc-ac3d-410a-ad6b-ceeef7b7d89b"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Heal1"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""67ccd98c-da07-4698-b5dc-b90bee3f7d40"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Heal1"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -394,9 +591,13 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         // Player1
         m_Player1 = asset.FindActionMap("Player1", throwIfNotFound: true);
         m_Player1_Movement = m_Player1.FindAction("Movement", throwIfNotFound: true);
+        m_Player1_Movement1 = m_Player1.FindAction("Movement1", throwIfNotFound: true);
         m_Player1_BasicAttack = m_Player1.FindAction("BasicAttack", throwIfNotFound: true);
+        m_Player1_BasicAttack1 = m_Player1.FindAction("BasicAttack1", throwIfNotFound: true);
         m_Player1_UltimateAttack = m_Player1.FindAction("UltimateAttack", throwIfNotFound: true);
+        m_Player1_UltimateAttack1 = m_Player1.FindAction("UltimateAttack1", throwIfNotFound: true);
         m_Player1_Heal = m_Player1.FindAction("Heal", throwIfNotFound: true);
+        m_Player1_Heal1 = m_Player1.FindAction("Heal1", throwIfNotFound: true);
         m_Player1_PauseGame = m_Player1.FindAction("PauseGame", throwIfNotFound: true);
         // Player2
         m_Player2 = asset.FindActionMap("Player2", throwIfNotFound: true);
@@ -454,18 +655,26 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Player1;
     private IPlayer1Actions m_Player1ActionsCallbackInterface;
     private readonly InputAction m_Player1_Movement;
+    private readonly InputAction m_Player1_Movement1;
     private readonly InputAction m_Player1_BasicAttack;
+    private readonly InputAction m_Player1_BasicAttack1;
     private readonly InputAction m_Player1_UltimateAttack;
+    private readonly InputAction m_Player1_UltimateAttack1;
     private readonly InputAction m_Player1_Heal;
+    private readonly InputAction m_Player1_Heal1;
     private readonly InputAction m_Player1_PauseGame;
     public struct Player1Actions
     {
         private @PlayerControls m_Wrapper;
         public Player1Actions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player1_Movement;
+        public InputAction @Movement1 => m_Wrapper.m_Player1_Movement1;
         public InputAction @BasicAttack => m_Wrapper.m_Player1_BasicAttack;
+        public InputAction @BasicAttack1 => m_Wrapper.m_Player1_BasicAttack1;
         public InputAction @UltimateAttack => m_Wrapper.m_Player1_UltimateAttack;
+        public InputAction @UltimateAttack1 => m_Wrapper.m_Player1_UltimateAttack1;
         public InputAction @Heal => m_Wrapper.m_Player1_Heal;
+        public InputAction @Heal1 => m_Wrapper.m_Player1_Heal1;
         public InputAction @PauseGame => m_Wrapper.m_Player1_PauseGame;
         public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
@@ -479,15 +688,27 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Movement.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMovement;
+                @Movement1.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMovement1;
+                @Movement1.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMovement1;
+                @Movement1.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMovement1;
                 @BasicAttack.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnBasicAttack;
                 @BasicAttack.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnBasicAttack;
                 @BasicAttack.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnBasicAttack;
+                @BasicAttack1.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnBasicAttack1;
+                @BasicAttack1.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnBasicAttack1;
+                @BasicAttack1.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnBasicAttack1;
                 @UltimateAttack.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnUltimateAttack;
                 @UltimateAttack.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnUltimateAttack;
                 @UltimateAttack.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnUltimateAttack;
+                @UltimateAttack1.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnUltimateAttack1;
+                @UltimateAttack1.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnUltimateAttack1;
+                @UltimateAttack1.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnUltimateAttack1;
                 @Heal.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnHeal;
                 @Heal.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnHeal;
                 @Heal.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnHeal;
+                @Heal1.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnHeal1;
+                @Heal1.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnHeal1;
+                @Heal1.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnHeal1;
                 @PauseGame.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPauseGame;
                 @PauseGame.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPauseGame;
                 @PauseGame.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnPauseGame;
@@ -498,15 +719,27 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
+                @Movement1.started += instance.OnMovement1;
+                @Movement1.performed += instance.OnMovement1;
+                @Movement1.canceled += instance.OnMovement1;
                 @BasicAttack.started += instance.OnBasicAttack;
                 @BasicAttack.performed += instance.OnBasicAttack;
                 @BasicAttack.canceled += instance.OnBasicAttack;
+                @BasicAttack1.started += instance.OnBasicAttack1;
+                @BasicAttack1.performed += instance.OnBasicAttack1;
+                @BasicAttack1.canceled += instance.OnBasicAttack1;
                 @UltimateAttack.started += instance.OnUltimateAttack;
                 @UltimateAttack.performed += instance.OnUltimateAttack;
                 @UltimateAttack.canceled += instance.OnUltimateAttack;
+                @UltimateAttack1.started += instance.OnUltimateAttack1;
+                @UltimateAttack1.performed += instance.OnUltimateAttack1;
+                @UltimateAttack1.canceled += instance.OnUltimateAttack1;
                 @Heal.started += instance.OnHeal;
                 @Heal.performed += instance.OnHeal;
                 @Heal.canceled += instance.OnHeal;
+                @Heal1.started += instance.OnHeal1;
+                @Heal1.performed += instance.OnHeal1;
+                @Heal1.canceled += instance.OnHeal1;
                 @PauseGame.started += instance.OnPauseGame;
                 @PauseGame.performed += instance.OnPauseGame;
                 @PauseGame.canceled += instance.OnPauseGame;
@@ -574,9 +807,13 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     public interface IPlayer1Actions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnMovement1(InputAction.CallbackContext context);
         void OnBasicAttack(InputAction.CallbackContext context);
+        void OnBasicAttack1(InputAction.CallbackContext context);
         void OnUltimateAttack(InputAction.CallbackContext context);
+        void OnUltimateAttack1(InputAction.CallbackContext context);
         void OnHeal(InputAction.CallbackContext context);
+        void OnHeal1(InputAction.CallbackContext context);
         void OnPauseGame(InputAction.CallbackContext context);
     }
     public interface IPlayer2Actions
