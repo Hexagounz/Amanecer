@@ -82,7 +82,7 @@ public class Boss : MonoBehaviour
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        Healthbar.enabled = false;
+        Healthbar.gameObject.SetActive(false);
         nav = GetComponent<UnityEngine.AI.NavMeshAgent>();
         enemyHealth = GetComponent<EnemyHealth>();
     }
@@ -151,7 +151,7 @@ public class Boss : MonoBehaviour
         {
             Restart();
             nav.SetDestination(target.position);
-            Healthbar.enabled = true;
+            Healthbar.gameObject.SetActive(true);
             Idle();
         }
         else if (targetDistance <= stoppingDistance)
